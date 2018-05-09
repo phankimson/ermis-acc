@@ -1,0 +1,23 @@
+ <!doctype html>
+<!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+@include('global.includes.head')
+@!section('css')
+ </head>
+ @include('global.includes.header')
+  <body class=" sidebar_main_open sidebar_main_swipe">
+    @include('global.includes.menu')
+
+ <div id="page_content">
+ <div id="page_content_inner">
+   @!section('content')
+   </div>
+    </div>
+    @include('global.includes.footer')
+  @!section('scripts')
+
+  @include('language')
+</body>
+</html>
